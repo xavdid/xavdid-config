@@ -1,0 +1,53 @@
+{
+  "name": "@brownman/config",
+  "version": "0.0.0",
+  "description": "Reading info for personal projects",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p .",
+    "test": "jest",
+    "posttest": "yarn lint",
+    "release": "npx np"
+  },
+  "keywords": [],
+  "files": [
+    "lib/*.js",
+    "lib/index.d.ts"
+  ],
+  "author": {
+    "name": "David Brownman",
+    "email": "beamneocube@gmail.com",
+    "url": "https://davidbrownman.com"
+  },
+  "license": "ISC",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "24.0.0",
+    "jest": "24.1.0",
+    "ts-jest": "23.10.5",
+    "tslint": "5.12.1",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-config-standard": "8.0.1",
+    "typescript": "3.3.3"
+  }
+}
